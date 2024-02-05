@@ -1,4 +1,4 @@
-import { getColorFromPairNumber, getPairNumberFromColor } from "./color_number";
+const { getColorFromPairNumber, getPairNumberFromColor } = require( "./color_number");
 
 function test(){
 	    pairNumber = 4;
