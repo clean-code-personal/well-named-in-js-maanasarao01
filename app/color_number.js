@@ -1,4 +1,4 @@
-import { MajorColorNames, MinorColorNames, ColorPair } from "./color.js";
+import { MajorColorNames, MinorColorNames, ColorPair } from "./color";
 
 function getColorFromPairNumber(pairNumber)
 {
