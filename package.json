@@ -2,10 +2,10 @@
   "name": "well-named-in",
   "version": "1.0.0",
   "description": "JS Assignment Repository",
-  "main": "color.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app/color.js"
+    "start": "node app/test.js"
   },
   "repository": {
     "type": "git",
