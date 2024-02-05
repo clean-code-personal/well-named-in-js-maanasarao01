@@ -1,4 +1,4 @@
-import { MajorColorNames, MinorColorNames, ColorPair } from "./color";
+const { MajorColorNames, MinorColorNames, ColorPair }= require ("./color");
 
 function getColorFromPairNumber(pairNumber)
 {
@@ -47,4 +47,4 @@ function getPairNumberFromColor(pair)
 
         return (majorIndex * MinorColorNames.length) + (minorIndex + 1);
 	 }
-export { getColorFromPairNumber, getPairNumberFromColor };
+module.exports { getColorFromPairNumber, getPairNumberFromColor };
