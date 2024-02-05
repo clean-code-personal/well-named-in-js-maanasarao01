@@ -37,6 +37,7 @@ function test(){
 function printManual() {
     let manual = colorManual();
     console.log('\nColor Coding Reference Manual:\n');
+    console.log('PairNumber  Colors\n');
     console.log(manual);
 }
 test();
