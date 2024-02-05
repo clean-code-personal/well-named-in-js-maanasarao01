@@ -1,7 +1,7 @@
 import { getColorFromPairNumber, getPairNumberFromColor } from "./color_number";
 
 function test(){
-			pairNumber = 4;
+	    pairNumber = 4;
             let testPair1 = getColorFromPairNumber(pairNumber);
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
 			console.assert(testPair1.majorColor == "WHITE");
