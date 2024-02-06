@@ -11,6 +11,6 @@ function ColorPair(){
            this.minorColor;
 }
 ColorPair.prototype.toString=function(){
-	return `  ${this.majorColor}         ${this.minorColor}`;
+	return `  ${this.majorColor}             ${this.minorColor}`;
 }
 module.exports= { MajorColorNames, MinorColorNames, ColorPair };
