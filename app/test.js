@@ -7,6 +7,10 @@ function test(){
 			console.assert(testPair1.majorColor === "WHITE");
 			console.assert(testPair1.minorColor === "BROWN");
 
+	    //rangecheck
+            testPair1 = getColorFromPairNumber(-1);
+            console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
+	
 			pairNumber = 5;
             testPair1 = getColorFromPairNumber(pairNumber);
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
