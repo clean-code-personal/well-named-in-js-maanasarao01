@@ -1,4 +1,4 @@
-const { getColorFromPairNumber, getPairNumberFromColor, ColorPair, colorManual } = require( "./color_number");
+const { getColorFromPairNumber, getPairNumberFromColor, ColorPair } = require( "./color_number.js");
 
 function test(){
 	    pairNumber = 4;
@@ -33,12 +33,5 @@ function test(){
             console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
 			console.assert(pairNumber==6);
 }
-
-function printManual() {
-    let manual = colorManual();
-    console.log('\nColor Coding Reference Manual:\n');
-    console.log('PairNumber           Colors\n');
-    console.log(manual);
-}
 test();
-printManual();
+
