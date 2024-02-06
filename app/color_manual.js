@@ -1,4 +1,5 @@
-const{ MajorColorNames,MinorColorNames,getPairNumberFromColor,ColorPair}=require('./color_number.js');
+const{ getPairNumberFromColor,ColorPair}=require('./color_number.js');
+const{ MajorColorNames, MinorColorNames}=require('./color.js');
 
 function colorManual() {
     let colorCodes = [];
