@@ -8,8 +8,13 @@ function test(){
 			console.assert(testPair1.minorColor === "BROWN");
 
 	    //rangecheck
+	   try{
             testPair1 = getColorFromPairNumber(-1);
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
+	   }
+	   catch(err){
+		   console.error(err);
+	   }
 	
 			pairNumber = 5;
             testPair1 = getColorFromPairNumber(pairNumber);
