@@ -9,7 +9,7 @@ function colorManual() {
             pair.majorColor = majorColor;
             pair.minorColor = minorColor;
             let pairNumber = getPairNumberFromColor(pair);
-            colorCodes.push(`  ${pairNumber}      :  ${pair.toString()}`);
+            colorCodes.push(`   ${pairNumber}      :      ${pair.toString()}`);
         }
     }
     return colorCodes.join('\n');
@@ -18,7 +18,7 @@ function colorManual() {
 function printManual() {
     let manual = colorManual();
     console.log('\nColor Coding Reference Manual:\n');
-    console.log('PairNumber         MajorColor       MinorColor\n');
+    console.log('PairNumber        MajorColor      MinorColor\n');
     console.log(manual);
 }
 printManual();
