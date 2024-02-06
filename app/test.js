@@ -4,14 +4,14 @@ function test(){
 	    pairNumber = 4;
             let testPair1 = getColorFromPairNumber(pairNumber);
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
-	                console.log(`Major Color: ${testPair1.majorColor}`);
-                        console.log(`Minor Color: ${testPair1.minorColor}`);
 			console.assert(testPair1.majorColor === "WHITE");
 			console.assert(testPair1.minorColor === "BROWN");
 
 			pairNumber = 5;
             testPair1 = getColorFromPairNumber(pairNumber);
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
+	                console.log(`Major Color: ${testPair1.majorColor}`);
+                        console.log(`Minor Color: ${testPair1.minorColor}`);
 			console.assert(testPair1.majorColor === "WHITE");
 			console.assert(testPair1.minorColor === "SLATEGRAY");
 			 
