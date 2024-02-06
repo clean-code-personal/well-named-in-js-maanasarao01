@@ -39,4 +39,4 @@ jobs:
         run: sudo npm run start
       
       - name: Run color_manual
-        run: node color_manual.js
+        run: node app/color_manual.js
