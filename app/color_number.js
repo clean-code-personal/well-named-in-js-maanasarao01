@@ -48,17 +48,4 @@ function getPairNumberFromColor(pair)
         return (majorIndex * MinorColorNames.length) + (minorIndex + 1);
 	 }
 
-function colorManual() {
-    let colorCodes = [];
-    for (let majorColor of MajorColorNames) {
-        for (let minorColor of MinorColorNames) {
-            let pair = new ColorPair();
-            pair.majorColor = majorColor;
-            pair.minorColor = minorColor;
-            let pairNumber = getPairNumberFromColor(pair);
-            colorCodes.push(`  ${pairNumber}       -  ${pair.toString()}`);
-        }
-    }
-    return colorCodes.join('\n');
-}
 module.exports = { getColorFromPairNumber, getPairNumberFromColor, ColorPair, colorManual };
