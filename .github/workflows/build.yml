@@ -34,6 +34,9 @@ jobs:
         
       
       # Runs a set of commands using the runners shell
-      - name: Run colorCoder
+      - name: Run test
+      
         run: sudo npm run start
-         
+      
+      - name: Run color_manual
+        run: node app/color_manual.js
