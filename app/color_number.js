@@ -2,15 +2,15 @@ const { MajorColorNames, MinorColorNames, ColorPair }= require ("./color");
 
 function getColorFromPairNumber(pairNumber)
 {
-	let minorSize = MajorColorNames.length;
-	let majorSize = MinorColorNames.length;
+	let majorSize = MajorColorNames.length;
+	let minorSize = MinorColorNames.length;
 	
 	if (pairNumber < 1 || pairNumber > minorSize * majorSize)
  	{
  		throw `Argument PairNumber:${pairNumber} is outside the allowed range` 
 	}
 	let zeroBasedPairNumber = pairNumber - 1;
-    let majorIndex = parseInt (zeroBasedPairNumber / minorSize);
+    let majorIndex = parseInt (zeroBasedPairNumber / majorSize);
     let minorIndex = parseInt(zeroBasedPairNumber % minorSize);
 	let  pair = new ColorPair();
 	pair.majorColor = MajorColorNames[majorIndex];
